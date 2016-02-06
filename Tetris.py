@@ -830,7 +830,7 @@ class Tetris(object):
         self.titleText.removeNode()
         self.helpPage.removeNode()
 
-DisplayDriver.engine.setFrameRate(500)
+DisplayDriver.engine.setFrameRate(12)
 DisplayDriver.engine.graphics.setBackground(' ')
 DisplayDriver.init()
 Tetris([14,17],[30,0]) #Make a tetris instance with size 20*21 and position 20,0

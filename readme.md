@@ -1,14 +1,18 @@
+# DisplayDriver
+
 Display Driver is an ascii display engine for python and begun development
 in august 2013. The engine is not very powerful but gives functional object
 oriented programming. It was developed and so designed to work on windows only
 and has never been tested on other platforms.
 
+# Usage
+
 DisplayDriver is designed to work on python 2.7 and 3.x, and does not need any
 other modules other than built in modules to work.
 
 The best way to understand how to program with display driver is to look
-at the syntax I have used with the 2 example games: Tetris and Snake,
-both of which function far better than I ever expected them to.
+at the syntax I have used with the example games: Tetris, Pong Pacman, and Snake,
+all of which function far better than I ever expected them to.
 
 The main concept of programming in Display Driver is Ticks, Display Driver
 runs on a task based system, you add the task you want to be completed
@@ -41,7 +45,7 @@ stickMan.render(DisplayDriver.engine)
 DisplayDriver being the DisplayDriver module
 
 
-Modules:
+# Modules
 
 Intervals - Idea taken from Panda3D, runs a new function every frame
 with delays if needed designed for things like particle effects.

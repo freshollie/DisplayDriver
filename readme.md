@@ -47,6 +47,7 @@ After the object has initialised it can be rendered with the method render
 of the GuiObjectBase, for example:
 
 stickMan=GuiObjectBase(image=stickManLook)
+
 stickMan.render(DisplayDriver.engine)
 
 DisplayDriver being the DisplayDriver module

@@ -68,6 +68,6 @@ add colour to the terminal on windows.
 
 # Example Games:
 
-![alt text](https://raw.githubusercontent.com/freshollie/DisplayDriver/Screenshots/TetrisExample.png "Tetris")
+![alt text](https://raw.githubusercontent.com/freshollie/DisplayDriver/master/Screenshots/TetrisExample.png "Tetris")
 
-![alt text](https://raw.githubusercontent.com/freshollie/DisplayDriver/Screenshots/PacmanExample.PNG "Pacman")
+![alt text](https://raw.githubusercontent.com/freshollie/DisplayDriver/master/Screenshots/PacmanExample.PNG "Pacman")

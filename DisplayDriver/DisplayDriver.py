@@ -95,7 +95,6 @@ class Graphics(object):
                 for rowNum in range(len(image)): # For interation in the height of the image
                     for pixelNum in range(len(image[rowNum])): # For interation in the width of the row
                         if hasattr(entity, 'pos'):
-                            print(image)
                             y = int(round(entity.getY()))
                             x = int(round(entity.getX()))
                         else:
@@ -105,10 +104,10 @@ class Graphics(object):
                         if x<self.res[1] and x>=0 and y<self.res[0] and y>=0: # If the pixel is off screen, ignore
                             if image[rowNum][pixelNum]!=BACKGROUNDCHAR: # If the pixel is the invisible character, ignore
                                 try:
-                                    
                                     self.pixelArray[x][y]=image[rowNum][pixelNum] # Set the pixel array x and y position to the pixel of the image
                                 except:
                                     print(entity)
+                                    input('Error with this entity')
 
                             else:
                                 pass

@@ -140,7 +140,7 @@ class Snake(object):
 
         for sequence in sequences:
             sequence.start()
-        Explosion(self.midPos,DisplayDriver.engine).play()
+        Explosion(self.midPos,DisplayDriver.engine).loop()
 
     def render(self,renderer):
         self.head.render(renderer)
@@ -240,7 +240,7 @@ class SnakeGame(object):
 
         seq.append(Func(self.startTick))
             
-        seq.loop()
+        seq.start()
                                     
 
     def isColliding(self,headPos):
@@ -363,7 +363,7 @@ class SnakeGame(object):
     def gameOver(self):
         DisplayDriver.engine.removeTask(self.taskId)
         self.taskId=0
-        seq=Sequence('GameOverSeq',DisplayDriver.engine)
+        seq=Sequence(DisplayDriver.engine)
         seq.append(Func(self.snake.explode))
         seq.append(Wait(2))
         seq.append(Func(self.disableRunning))

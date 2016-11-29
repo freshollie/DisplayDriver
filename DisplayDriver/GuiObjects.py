@@ -766,16 +766,16 @@ class Explosion(GuiObjectBase):
 
         try:
             self.setImage(self.FRAMES[self.currentFrame])
-        except:
+        except IndexError:
             self.currentFrame=-1
 
     def play(self):
         self.render(self.engine)
-        self.seq.append(Func(self.removeNode))
         self.seq.start()
 
     def loop(self):
-        self.seq=Sequence('Explosion',self.engine)
+        self.render(self.engine)
+        self.seq=Sequence(self.engine)
         for i in range(len(self.FRAMES)):
             self.seq.append(Func(self.nextFrame))
         self.render(self.engine)

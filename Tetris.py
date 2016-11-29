@@ -424,10 +424,12 @@ class TetrisMenuBackground(object):
                 self.blocks.remove(block)
 
     def start(self):
-        self.taskId=DisplayDriver.engine.addTask(self.tick)
+        if not self.taskId:
+            self.taskId=DisplayDriver.engine.addTask(self.tick)
 
     def stop(self):
         DisplayDriver.engine.removeTask(self.taskId)
+        self.taskId = None
         for block in self.blocks:
             block.removeNode()
         self.blocks=[]
@@ -830,7 +832,7 @@ class Tetris(object):
         self.titleText.removeNode()
         self.helpPage.removeNode()
 
-DisplayDriver.engine.setFrameRate(16)
+DisplayDriver.engine.setFrameRate(20)
 DisplayDriver.engine.graphics.setBackground(' ')
 DisplayDriver.init()
 Tetris([14,17],[30,0]) #Make a tetris instance with size 20*21 and position 20,0

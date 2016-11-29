@@ -65,3 +65,9 @@ functionallity.
 
 Colour - A module which most of the code for was found online. Used to
 add colour to the terminal on windows.
+
+# Example Games:
+
+![alt text](raw.githubusercontent.com/freshollie/DisplayDriver/Screenshots/TetrisExample.png "Tetris")
+
+![alt text](raw.githubusercontent.com/freshollie/DisplayDriver/Screenshots/PacmanExample.PNG "Pacman")

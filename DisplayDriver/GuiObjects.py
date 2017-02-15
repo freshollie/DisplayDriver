@@ -168,7 +168,7 @@ class Border(GuiObjectBase):
             for char in self.chars[0]:
                 self[0][-1].append(char)
             for i in range(self.diamentions[0]-2):
-                self[0][-1].append('\xF0')
+                self[0][-1].append(Chars.BACKGROUNDCHAR)
             for char in self.chars[1]:
                 self[0][-1].append(char)
                 

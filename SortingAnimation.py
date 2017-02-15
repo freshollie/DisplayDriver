@@ -116,7 +116,7 @@ class SortingRepresentation(object):
                 
             
 DisplayDriver.engine.graphics.setRes([80,40])
-DisplayDriver.engine.setFrameRate(50)
+DisplayDriver.engine.setFrameRate(30)
 #DisplayDriver.debug.toggle()
 SortingRepresentation()
 DisplayDriver.init()

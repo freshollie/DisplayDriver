@@ -7,12 +7,15 @@ import math
 import string
 import time
 
-FRAMERATE = 25.0
+# Ball speed is independant of framerate. Default is 20
+FRAMERATE = 20.0
 
-XCONSTANT = 2.0
+# How much taller pixels are than they are wide. E.G Windows terminal is 2x
+# taller than wide.
+XCONSTANT = 2.0 
 
 class World(Border):
-    SIZE = [80,40]
+    SIZE = [80,39]
     TOP = 0
     RIGHT = 1
     BOTTOM = 2

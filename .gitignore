@@ -1,2 +1,3 @@
 /.idea
-/DisplayDriver/__pycache__
+/DisplayDriver/__pycache__.pyc
+*.pyc
